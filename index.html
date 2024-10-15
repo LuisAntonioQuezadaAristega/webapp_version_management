@@ -7,11 +7,54 @@
     <meta name="keywords" content="Configuration_Management"/>
     <meta name="author" content="Group4" />
     <title>Sobre_nosotros</title>
+    <link rel="stylesheet" href="stylesheets/style.css" type='text/css'/>
 </head>
 
 <body>
     <header>
         <h1>Menu</h1>
     </header>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="#about">About_us</a>
+        <a href="#contacto">Contact Form</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <section id="contacto">
+        <h2>Contact Form</h2>
+        <p>Para ponernos en contacto complete el siguiente formulario:</p>
+        <form action method="get">
+            <div>
+                <label>Nombre:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <br>
+            <div>
+                <label>Correo:</label>
+                <input type="text" name="correo" id="correo" required>
+            </div>
+            <br>
+            <div>
+                <label>Telefono:</label>
+                <input type="text" name="telefono" id="telefono">
+            </div>
+            <br>
+            <div>
+                <label for="tipo">Tipo de servicio que desea:</label>
+                <select id="tipo" name="tipo">
+                    <option value="    ">    </option>
+                    <option value="Diseño de pagina web">Diseño de pagina web</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar" id="boton">
+            </div>
+        </form>
+    </section>
 </body>
 </html>
